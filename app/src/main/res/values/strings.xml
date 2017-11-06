@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GoodMeal</string>
+    <string name="slogan">Cooking is not difficult. Everyone has taste, even if they do not realize it...</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
