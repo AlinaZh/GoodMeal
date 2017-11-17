@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "846724597660",
+    "firebase_url": "https://goodmeal-1b90c.firebaseio.com",
+    "project_id": "goodmeal-1b90c",
+    "storage_bucket": "goodmeal-1b90c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846724597660:android:3362757b3ff05949",
+        "android_client_info": {
+          "package_name": "com.example.alina.goodmeal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846724597660-rbhh72rko0kdk24a4ucmea1nnfq3l8cf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alina.goodmeal",
+            "certificate_hash": "f4cd1a70e7ce45fe8048577245b27adf33f26b42"
+          }
+        },
+        {
+          "client_id": "846724597660-rkdo6atasdnkbh6hk3bskf60ckeh6qdn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ4xtZWoezD3LXPDONYL_qaxgHbbhdcCo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846724597660-rkdo6atasdnkbh6hk3bskf60ckeh6qdn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
