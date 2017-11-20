@@ -17,7 +17,6 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-<<<<<<< HEAD
 
     <style name="CollapsedAppbar" parent="@android:style/TextAppearance.Medium" >
         <item name="android:textSize">24sp</item>
@@ -30,7 +29,4 @@
         <item name="android:textStyle">normal</item>
         </style>
 
-
-=======
->>>>>>> origin/master
 </resources>

@@ -3,10 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GoodMeal.iml" filepath="$PROJECT_DIR$/GoodMeal.iml" />
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/GoodMeal-master.iml" filepath="$PROJECT_DIR$/GoodMeal-master.iml" />
-=======
->>>>>>> origin/master
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

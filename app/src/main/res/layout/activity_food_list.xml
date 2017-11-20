@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
+
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.alina.goodmeal.FoodList"
     >
@@ -19,18 +19,14 @@
 
     </android.support.v7.widget.RecyclerView>
 
-=======
-    tools:context="com.example.alina.goodmeal.FoodList">
-
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="395dp"
-        android:layout_height="495dp"
-        android:id="@+id/recycler_food"
-        android:scrollbars="vertical"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        />
->>>>>>> origin/master
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_width="395dp"-->
+        <!--android:layout_height="495dp"-->
+        <!--android:id="@+id/recycler_food"-->
+        <!--android:scrollbars="vertical"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--/>-->
 
 </android.support.constraint.ConstraintLayout>
