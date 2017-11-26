@@ -25,8 +25,12 @@
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".FoodList" />
-        <activity android:name=".FoodDetail"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".FoodDetail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MyFavorites"></activity>
+        <activity android:name=".Model.Favorites"></activity>
+
     </application>
 
 </manifest>

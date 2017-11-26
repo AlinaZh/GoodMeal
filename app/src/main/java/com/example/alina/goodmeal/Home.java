@@ -21,6 +21,7 @@ import android.widget.Toast;
 import com.example.alina.goodmeal.Common.Common;
 import com.example.alina.goodmeal.Interface.ItemClickListener;
 import com.example.alina.goodmeal.Model.Category;
+import com.example.alina.goodmeal.Model.Favorites;
 import com.example.alina.goodmeal.Model.Food;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
@@ -59,8 +60,8 @@ public class Home extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent favIntent = new Intent(Home.this, Favorites.class);
+                startActivity(favIntent);
             }
         });
 
