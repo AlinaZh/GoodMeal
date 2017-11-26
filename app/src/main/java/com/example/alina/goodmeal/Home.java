@@ -16,13 +16,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.alina.goodmeal.Common.Common;
 import com.example.alina.goodmeal.Interface.ItemClickListener;
 import com.example.alina.goodmeal.Model.Category;
-import com.example.alina.goodmeal.Model.Favorites;
-import com.example.alina.goodmeal.Model.Food;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -60,8 +57,8 @@ public class Home extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent favIntent = new Intent(Home.this, Favorites.class);
-                startActivity(favIntent);
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action",null).show();
             }
         });
 

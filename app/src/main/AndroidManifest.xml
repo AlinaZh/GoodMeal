@@ -28,8 +28,6 @@
         <activity
             android:name=".FoodDetail"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MyFavorites"></activity>
-        <activity android:name=".Model.Favorites"></activity>
 
     </application>
 
