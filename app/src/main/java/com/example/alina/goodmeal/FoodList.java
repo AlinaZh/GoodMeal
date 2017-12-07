@@ -93,7 +93,7 @@ public class FoodList extends AppCompatActivity {
                         else
                         {
                             localDB.removeFromFavorites(adapter.getRef(position).getKey());
-                            viewHolder.fav_image.setImageResource(R.drawable.ic_favorite_black_24dp);
+                            viewHolder.fav_image.setImageResource(R.drawable.ic_favorite_border_black_24dp);
                             Toast.makeText(FoodList.this, ""+model.getName()+" was removed from Favorites", Toast.LENGTH_SHORT).show();
                         }
                     }

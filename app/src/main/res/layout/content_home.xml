@@ -10,8 +10,8 @@
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_menu"
-        android:layout_width="414dp"
-        android:layout_height="617dp"
+        android:layout_width="361dp"
+        android:layout_height="560dp"
         android:scrollbars="vertical"
         tools:layout_editor_absoluteY="-2dp"
         tools:layout_editor_absoluteX="0dp">

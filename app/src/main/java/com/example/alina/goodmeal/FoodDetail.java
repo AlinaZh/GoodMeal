@@ -4,6 +4,7 @@ import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -36,7 +37,7 @@ public class FoodDetail extends AppCompatActivity {
         foods = database.getReference("Foods");
 
         //Init view
-        btnFav = (FloatingActionButton)findViewById(R.id.btnFav);
+        //btnFav = (FloatingActionButton)findViewById(R.id.btnFav);
 
 
         food_directions = (TextView)findViewById(R.id.food_directions);
@@ -70,8 +71,8 @@ public class FoodDetail extends AppCompatActivity {
                 Picasso.with(getBaseContext()).load(food.getImage()).into(food_image);
 
                 collapsingToolbarLayout.setTitle(food.getName());
-                food_time.setText(food.getCookingTime());
                 food_name.setText(food.getName());
+                food_time.setText(food.getCookingTime());
 
                 food_ingredients.setText(food.getIngredients());
                 food_directions.setText(food.getDirections());

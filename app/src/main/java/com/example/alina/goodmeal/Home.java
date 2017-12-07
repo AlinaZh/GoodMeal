@@ -16,6 +16,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.alina.goodmeal.Common.Common;
 import com.example.alina.goodmeal.Interface.ItemClickListener;
@@ -53,14 +54,6 @@ public class Home extends AppCompatActivity
 
 
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action",null).show();
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -98,7 +91,8 @@ public class Home extends AppCompatActivity
                 viewHolder.setItemClickListener(new ItemClickListener() {
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
-                        //Toast.makeText(Home.this, ""+clickItem.getName(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Home.this, ""+clickItem.getName(), Toast.LENGTH_SHORT).show();
+
 
                         //Get categoryId and send to new activity
                         Intent foodList = new Intent(Home.this, FoodList.class);
@@ -107,6 +101,7 @@ public class Home extends AppCompatActivity
 
                     }
                 });
+
 
             }
         };
@@ -143,7 +138,7 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_menu) {
-            // Handle the camera action
+            loadMenu();
         } else if (id == R.id.nav_cat) {
 
         } else if (id == R.id.nav_fav) {

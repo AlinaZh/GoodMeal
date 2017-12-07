@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.alina.goodmeal.FoodDetail">
+    tools:context="com.example.alina.goodmeal.FoodDetail"
+    tools:showIn="@layout/app_bar_home">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar_layout"
@@ -45,17 +46,6 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/btnFav"
-        android:src="@drawable/ic_stars_black_24dp"
-        android:backgroundTint="@android:color/white"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:elevation="6dp"
-        app:pressedTranslationZ="12dp"
-        app:layout_anchor="@id/app_bar_layout"
-        app:layout_anchorGravity="bottom|right|end"
-        app:useCompatPadding="true"/>
 
     <android.support.v4.widget.NestedScrollView
         android:id="@+id/nestedScrollView"
@@ -101,8 +91,7 @@
 
                         <ImageView
                             android:src="@drawable/ic_timer_black_24dp"
-                            android:layout_weight="1"
-                            android:layout_width="0dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content" />
 
                         <TextView
@@ -110,9 +99,8 @@
                             android:text="60 min"
                             android:textColor="@color/colorPrimary"
                             android:textStyle="bold"
-                            android:textSize="18sp"
-                            android:layout_weight="9"
-                            android:layout_width="0dp"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
 
