@@ -53,6 +53,7 @@
             />
     </LinearLayout>
 
+
     <info.hoang8f.widget.FButton
         android:id="@+id/btnSignIn"
         android:text="Sign In"

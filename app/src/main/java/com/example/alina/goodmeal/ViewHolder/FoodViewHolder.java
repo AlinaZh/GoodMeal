@@ -1,10 +1,12 @@
 package com.example.alina.goodmeal.ViewHolder;
 
 import android.support.v7.widget.RecyclerView;
+import android.view.ContextMenu;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.alina.goodmeal.Common.Common;
 import com.example.alina.goodmeal.Interface.ItemClickListener;
 import com.example.alina.goodmeal.R;
 
@@ -13,7 +15,7 @@ import com.example.alina.goodmeal.R;
  * Created by Динара on 05.11.2017.
  */
 
-public class FoodViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+public class FoodViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnCreateContextMenuListener {
 
     public TextView food_name;
     public ImageView food_image, fav_image;
@@ -31,12 +33,23 @@ public class FoodViewHolder extends RecyclerView.ViewHolder implements View.OnCl
         food_image = (ImageView)itemView.findViewById(R.id.food_image);
         fav_image = (ImageView)itemView.findViewById(R.id.fav);
 
+        itemView.setOnCreateContextMenuListener(this);
         itemView.setOnClickListener(this);
+
     }
 
     @Override
     public void onClick(View view) {
         itemClickListener.onClick(view,getAdapterPosition(),false);
+
+    }
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        menu.setHeaderTitle("Select the action");
+
+        menu.add(0,0, getAdapterPosition(), Common.UPDATE);
+        menu.add(0,1,getAdapterPosition(), Common.DELETE);
 
     }
 }

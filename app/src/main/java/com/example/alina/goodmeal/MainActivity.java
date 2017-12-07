@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     TextView txtSlogan;
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

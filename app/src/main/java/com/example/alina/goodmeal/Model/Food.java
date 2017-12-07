@@ -19,7 +19,7 @@ public class Food {
         MenuId = menuId;
     }
 
-    public String getName() {
+     public String getName() {
         return Name;
     }
 
